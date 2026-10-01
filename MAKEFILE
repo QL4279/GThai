@@ -1,0 +1,10 @@
+.asm.obj:
+  tasm /M2 /l /Zi $*.asm
+
+.obj.com:
+  tlink /t /m /l /v $*
+
+GTHAI.COM: GTHAI.OBJ
+
+GTHAI.OBJ: gthai.asm gthai.inc gt_font1.inc gt_font2.inc
+
